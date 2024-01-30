@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Form</title>
+
+    <!-- /test?email=&date=&color=%23000000 
+        file:///C:/test?email=ibragimov-amir%40list.ru&date=2024-01-04&color=%23007bff&password=667788
+
+        file:///C:/test?date=2024-01-04&color=%23ff0000&password=667788
+
+        https://drive.google.com/drive/folders/1JKi8n7Sktq7byIsJZTt_C10e29JZm299
+
+        https://docs.google.com/spreadsheets/d/1hxGQbVmFdlwSktvht_48aGIHy4egGywyU7xks64tOuM/edit#gid=0
+    -->
+</head>
+<body>
+    <form action="/test">
+        <div>
+            <label for="email">Email input</label>
+            <input type="email" placeholder="Введите Email" id="email" name="gid"/>
+            <input type="date" placeholder="Введите Date">
+            <input type="color" id="color"/>
+        </div>
+        <div>
+            <label for="password">Password input</label>
+            <input type="password" placeholder="Введите пароль" id="password"/>
+        </div>
+        
+        <div>
+            <select name="animals" id="animals">
+                <option value="1">Кошка</option>
+                <option value="2">Лошадь</option>
+                <option value="3">Мышка</option>
+                <optgroup label="Водные">
+                    <option value="11">Акула</option>
+                    <option value="12">Кит</option>
+                    <option value="13">Дельфин</option>
+                </optgroup>
+                <optgroup label="Летающие">
+                    <option value="21" selected>Орёл</option>
+                    <option value="22">Ворона</option>
+                    <option value="23">Сокол</option>
+                    <option value="24">Соловей</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="range">Громкость</label>
+            <input type="range" id="range" min="0" max="10" name="range"/>
+            <label for="checkbox">Хотите ли вы чтобы ваши данные были сохранены</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </div>
+        <div>
+            <button type="submit">Кнопка</button>
+        </div>
+    </form>
+</body>
+</html>

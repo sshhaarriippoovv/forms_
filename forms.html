@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--file:///C:/test?password=-->
+
+</head>
+
+<body>
+    <center><b><font size="5">Ответьте на вопросы</font></b></center>
+    <style>
+        body {
+            background-color: khaki;
+        }
+    </style>
+    <form action="/test">
+        <br><center>
+       
+        <div>
+            <label for="Email">Какая у вас почта</label>
+            <input type="email" placeholder="Введите email" id="email" />
+        </div>
+        </center>
+
+        
+        <center>
+        <div>
+            <br>
+            <label for="password">Пароль</label>
+            <input type="password" placeholder="Введите пароль" id="email" name="password" />
+        </div>
+        </center>
+        
+        
+        <center>
+        <div>
+            <br>Когда родился Илон Маск <input type="date" placeholder="Введите дату">
+        </div>
+        </center>
+    
+        <center>
+        <div>
+            <br>Ваш любимый цвет <input type="color" id="color">
+        </div>
+        </center>
+        
+        <center>
+        <div>
+            <br>Какой транспорт вы предпочетаете <select name="cars" id="cars">
+                <optgroup label="Легковые"></optgroup>
+                <option value="1">Mercedes-Benz C class 2023</option>
+                <option value="2">Toyota Camry 2020</option>
+                <option value="3" >BMW m5 f90 2023</option>
+                <optgroup label="Спортивные">
+                    <option value="11">Toyota Supra Mk4</option>
+                    <option value="12">Nissan GT-R</option>
+                    <option value="13">Dodge Challenger</option>
+                </optgroup>
+
+                <optgroup label="Мотоциклы">
+                    <option value="21">Ducati Panigale V2 </option>
+                    <option value="22">BMW M 1000 RR </option>
+                    <option value="23">Yamaha YZF R1</option>
+                </optgroup>
+            </select>
+        </div>
+        </center>
+
+        <center>
+            <div>
+                <br><label for="range"> Ваше настроение на сегодня</label>
+                <input type="range" id="range" name="range">
+            </div>
+        </center>
+        
+        
+        
+        <center>
+        <div>
+            <br><label for="checkbox">Вы ждёте GTA VI</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </div>
+        </center>
+
+
+    </form>
+
+    <center>
+    <form action="https://alif.academy/">
+        <br><input type="submit" value="Нажми меня" />
+    </form>
+    </center>
+
+
+
+
+    <center><br><br><button>Проверить</button></center>
+
+
+
+</body>
+
+</html>
